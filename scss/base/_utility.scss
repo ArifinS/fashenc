@@ -1,0 +1,160 @@
+/**
+ * Utility CSS.
+ */
+
+ .rt-d-flex {
+	@extend %d-flex;
+}
+
+.rt-flex-wrap {
+	@extend %flex-wrap;
+}
+
+.rt-justify-content-center {
+	@extend %justify-content-center;
+}
+
+.rt-align-items-center {
+	@extend %align-items-center;
+}
+
+.rt-primary-color {
+	@extend %primary-color;
+}
+
+.rt-primary-color-bg {
+	@extend %primary-color-bg;
+}
+
+// .rt-secondary-color {
+// 	@extend %secondary-color;
+// }
+
+// .rt-secondary-color-bg {
+// 	@extend %secondary-color-bg;
+// }
+
+.rt-white-color {
+	@extend %white-color;
+}
+
+.rt-white-color-bg {
+	@extend %white-color-bg;
+}
+.rt-black-color {
+	@extend %black-color;
+}
+
+.rt-black-color-bg {
+	@extend %black-color-bg;
+}
+
+// .rt-default-gutter {
+// 	@extend %default-gutter;
+// }
+
+// .rt-gutter-half {
+// 	@extend %gutter-half;
+// }
+
+.rt-mb-0 {
+	@extend %mb-0;
+}
+
+.rt-static-content {
+	@extend %relative-content;
+}
+
+.rt-relative-content {
+	@extend %relative-content;
+}
+
+.rt-absolute-content {
+	@extend %relative-content;
+}
+
+/*======================================
+// pre-loader
+=====================================*/
+#preloader {
+	background: url("../../media/preloader.gif") rgba(255, 255, 255, 0.99) no-repeat scroll center center;
+	height: 100%;
+	left: 0;
+	overflow: visible;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999999;
+}
+
+/*======================================
+// Back-to-top
+=====================================*/
+
+button.scroll-to-top {
+	background-color: $color-secondary;
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	border-radius: 50px; 
+	color: transparent;
+	clear: both;
+	visibility: hidden;
+	position: fixed;
+	cursor: pointer;
+	display: block;
+	border: none;
+	right: 50px;
+	bottom: 75px;
+	// font-size: 0px;
+	outline: 0 !important;
+	z-index: 99;
+	transition: all .3s ease-in-out;
+	i {
+		&::before {
+			font-size: 10px;
+			color: $color-white;
+			position: relative;
+			top: -2px;
+		}
+	}
+}
+button.scroll-to-top.show {
+	display: block;
+	background-color: $color-secondary;
+	right: 25px;
+	bottom: 50px;
+	height: 40px;
+	width: 40px;
+	visibility: visible;
+	box-shadow: 6px 6px 12px rgba(181, 98, 0, 0.16);
+	&:hover {
+		i {
+			&::before {
+				font-size: 10px;
+				animation: toBottomFromTop .7s forwards;
+			}
+		}
+	}
+	i {
+		color: $color-white;
+	}
+}
+button.scroll-to-top.show:active {
+	box-shadow: 6px 6px 12px rgba(181, 98, 0, 0.16);
+}
+
+
+//....Icon.....//
+
+.rt-icon {
+	&::before {
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+		line-height: unset;
+	}
+}
+
+
+

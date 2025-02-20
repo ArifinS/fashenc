@@ -1,0 +1,89 @@
+/**
+ * Layout - Footer.
+ */
+ .footer {
+    background-color: #1a1a1a; 
+    color: white;
+    text-align: center;
+    min-height: 455px;
+    display: flex;
+    padding: 120px 0px 30px 0px;
+
+    align-items: center;
+    background-image: url("../images/footer/footer.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+ }
+
+.lifetime-badge {
+    border: 1px solid #48FF00;
+    color:#48FF00;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: white;
+    @media only screen and (max-width: 768px) {
+      font-size: 37px;
+    }
+}
+
+.hero-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949191;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.powered-by {
+    margin-top: 100px;
+    color: #666;
+    font-size: 22px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        left: -345px;
+        right: 0;
+        top: -27px;
+        opacity: 0.1;
+        width: 150%;
+        background-color: #D9D9D9;
+        @media only screen and (max-width: 1440px) {
+            display:none;
+        }
+    }
+}
+
+.powered-by img {
+    height: 26px;
+    margin-bottom: 6px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+

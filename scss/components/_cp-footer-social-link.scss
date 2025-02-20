@@ -1,0 +1,16 @@
+
+.social-list {
+    gap: 20px;
+    .social-item {
+        .social-link {
+            color: #8A8989;
+            &:hover {
+                color: $color-white;
+                border-color: transparent;
+                i {
+                    animation: toBottomFromTop 0.5s forwards;
+                }
+            }
+        }
+    }
+}

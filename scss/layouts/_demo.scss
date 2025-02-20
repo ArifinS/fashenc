@@ -1,0 +1,56 @@
+.demo-section {
+    background-color: #f8f9fa;
+    padding-bottom: 80px;
+  
+    .section-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 35px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .section-subtitle {
+      color: #666;
+      font-size: 1.1rem;
+      max-width: 669px;
+      margin: 0 auto;
+    }
+  
+    .demo-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      background-color: #fff;
+      transition: transform 0.3s, box-shadow 0.3s;
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+  
+      img {
+        border-radius: 8px;
+      }
+  
+  
+    }
+    .demo-title {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #000000;
+      }
+  
+    .coming-soon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #888;
+      border: 1px dashed #ccc;
+      background-color: #f9f9f9;
+    }
+  }
+  

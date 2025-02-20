@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* ================================
+	Frontend CSS.
+
+	Index:
+	r01 - Placeholders
+	r02 - Global
+	r03 - Utilities
+	r04 - Components
+	r05 - Layouts
+===================================*/
+
+// Abstracts
+@import "abstracts/__abstracts-dir";
+
+// Base Styles
+@import "base/__base-dir";
+
+// Components
+@import 'components/__components-dir';
+
+// Layouts
+@import 'layouts/__layouts-dir';
+
+

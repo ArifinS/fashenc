@@ -1,0 +1,41 @@
+$background-color: #1a123d;
+$card-color: #2a1d59;
+$text-color: #ffffff;
+.feature-highlights {
+  padding: 100px 0px;
+background-color: #1A0F3B;
+  .feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+  
+    img {
+      object-fit: contain;
+      
+    }
+    h5 {
+      color: $text-color;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+    }
+    &.style-1 {
+      position: relative;
+      .text-white {
+        position: absolute;
+        left: 40%;
+        @media only screen and (max-width: 1200px) {
+          position: relative;
+          left: -2%;
+      }
+      }
+    }
+  }
+}

@@ -1,0 +1,372 @@
+/**
+ * Global CSS.
+ */
+
+ :root {
+    
+	--color-primary: #E9004B;
+    --color-secondary: #FFF3F3;
+
+    --color-secondary-100: #FCF8F0;
+    --color-gray: #EDF5F4;
+	--color-white: #fff;
+	--color-body: #FDFCFC;
+    --color-black: #02060C;
+    
+    --color-paragraph: #626262;
+
+	--font-body: "Outfit", serif;
+    
+	--font-title: "Outfit", serif;
+	--border-radius-xs: 4px;
+	--border-radius-sm: 6px;
+	--border-radius-md: 10px;
+	--border-radius-lg: 15px;
+	--border-radius-xl: 20px;
+
+}
+
+
+
+/* ===========================
+// Typography
+==============================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font-body;
+	font-size: 16px;
+	color: $color-body;
+    font-weight: 400;
+}
+
+p {
+	font-family: $font-title;
+	font-size: 16px;
+	color: $color-body;
+    font-weight: 400;
+    line-height: 26px;
+	margin-bottom: 15px;
+}
+
+/*==== heading fonts setup ====*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-black);
+	font-family: var(--font-title);
+	line-height: 1.2;
+	font-weight: 600;
+}
+
+$heading-font-size: (
+	h1: 48,
+	h2: 40,
+	h3: 32,
+	h4: 26,
+	h5: 22,
+	h6: 18,
+);
+h1 {
+	font-size: 48px;
+	line-height: 1.23;
+	@include breakpoint("sm") {
+	  	font-size: 36px;
+	}
+}
+h2 {
+	font-size: 40px;
+}
+h3 {
+	font-size: 32px;
+}
+h4 {
+	font-size: 26px;
+}
+h5 {
+	font-size: 22px;
+}
+h6 {
+	font-size: 18px;
+}
+
+
+/*============================ 
+// Bootstrap Overwrite
+=============================*/
+
+@media (min-width: 1200px) {
+    .row.gutters-10 {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .row.gutters-10 > [class^="col-"] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row.gutters-15 {
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+    }
+    .row.gutters-15 > [class^="col-"] {
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row.gutters-20 {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .row.gutters-20 > [class^="col-"] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row.gutters-30 {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .row.gutters-30 > [class^="col-"] {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row.gutters-40 {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .row.gutters-40 > [class^="col-"] {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row.gutters-50 {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+    .row.gutters-50 > [class^="col-"] {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row.gutters-60 {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    .row.gutters-60 > [class^="col-"] {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.gutter-30 > li, .gutter-30 > div {
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+
+/*============================ 
+// Global styles
+=============================*/
+
+html {
+	overflow-x: hidden !important;
+    width: 100%;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    position: relative;
+    background-color: var(--color-white);
+    @include transition();
+    z-index: 2;
+}
+
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	color: var(--color-primary);
+	display: inline-block;
+  	@include transition();
+	&:link,
+	&:visited,
+	&:focus {
+		text-decoration: none;
+		outline: 0;
+  	}
+  	&:hover {
+        text-decoration: none;
+        color: var(--color-primary);
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+select {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+
+.section-padding {
+    padding-block: 120px;
+    @include breakpoint("lg") {
+        padding: 100px 0;
+    }
+    @include breakpoint("md") {
+        padding: 80px 0;
+    }
+}
+
+
+section,
+.section {
+    position: relative;
+}
+
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1330px;
+    }
+}
+
+
+
+
+// animation 
+
+
+.animate__animated {
+    opacity: 0;
+}
+
+.animate__animated.animate__animated-in {
+    opacity: 1;
+}
+
+   /* Hide elements initially */
+   .animate__animated {
+    opacity: 0;
+}
+
+.animate__animated.animate__animated-in {
+    opacity: 1;
+}
+
+/* Smooth transition for menu toggle */
+.menu-toggle span {
+    transition: all 0.3s ease;
+}
+
+/* Mobile menu animation */
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+
+/* Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+
+// button 
+

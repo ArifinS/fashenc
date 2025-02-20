@@ -1,0 +1,50 @@
+/* ===========================
+// Typography
+==============================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: $font-outfit;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 76px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}

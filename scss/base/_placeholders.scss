@@ -1,0 +1,84 @@
+// ===========================
+//	Placeholders
+// ===========================
+
+%clearfix {
+	content: " ";
+	display: table;
+}
+
+%box-sizing {
+	box-sizing: border-box;
+}
+
+%transition {
+	transition: all 0.3s;
+}
+
+%d-flex {
+	display: flex;
+}
+
+%flex-wrap {
+	flex-wrap: wrap;
+}
+
+%justify-content-center {
+	justify-content: center;
+}
+
+%align-items-center {
+	align-items: center;
+}
+
+%static-content {
+	position: static;
+}
+
+%relative-content {
+	position: relative;
+}
+
+%absolute-content {
+	position: absolute;
+}
+
+%primary-color {
+	color: $color-primary;
+}
+
+%primary-color-bg {
+	background-color: $color-primary;
+}
+
+// %secondary-color {
+// 	color: $color-secondary;
+// }
+
+// %secondary-color-bg {
+// 	background-color: $color-secondary;
+// }
+
+%white-color {
+	color: $color-white;
+}
+
+%white-color-bg {
+	background-color: $color-white;
+}
+
+%black-color {
+	color: $color-body;
+}
+
+%black-color-bg {
+	background-color: $color-body;
+}
+
+%text-center {
+	text-align: center;
+}
+
+%mb-0 {
+	margin-bottom: 0;
+}
